@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   <title>menu</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+   
+    .menu{
+        position: absolute;
+        top: 0px;
+        left: 53px;
+    }
+.menu{
+
+    width: 146px;
+    opacity: 0;  
+}
+a{
+    color: #000;
+    text-decoration: none;
+    font-size: 17,33333333333333px;
+}
+.scrit{
+    opacity: 0;  
+
+    text-decoration: none;
+    font-size: 17,33333333333333px;
+}
+.img{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    text-align: center;
+}
+@media(max-width: 1224px){
+   .img{
+       display: flex;
+    flex-direction: column;
+align-items: center;
+   }
+}
+</style>
+</head>
+<body>
+<img id="img"  src="img.png" alt="">
+<p></p>
+<div class="menu">
+    <a href="#">ГЛАВНАЯ</a>
+<p></p>
+<a href="#">О НАС </a>
+<p></p>
+<a href="#">КОНТАКТЫ</a>
+</div>
+<p></p>
+<a class="scrit" href="#">скрыть меню</a>
+<p></p>
+<h1 >Сервисы Google </h1>
+<div class="img">
+<a href="apk/apk1.html"><img src="images/img1.png" alt=""></a>   
+<a href="apk/apk2.html"><img src="images/img2.png" alt=""></a> 
+<a href="apk/apk3.html"><img src="images/img3.png" alt=""></a>  
+<a href="apk/apk 4.html"><img src="images/img4.png" alt=""></a>  
+<a href="apk/apk5.html"><img src="images/img5.png" alt=""></a>  
+</div>
+<p></p>
+<div class="img">
+    <a href="apk/apk6.html"><img src="images/img6.png" alt=""></a>   
+    <a href="apk/apk7.html"><img src="images/img7.png" alt=""></a> 
+    <a href="apk/apk8.html"><img src="images/img8.png" alt=""></a>  
+    <a href="apk/apk9.html"><img src="images/img9.png" alt=""></a>  
+    <a href="apk/apk10.html"><img src="images/img10.png" alt=""></a>  
+    </div>
+<p></p>
+<div class="img">
+    <a href="apk/apk11.html"><img src="images/img11.png" alt=""></a>   
+<a href="apk/apk12.html"><img src="images/img12.png" alt=""></a> 
+<a href="apk/apk13.html"><img src="images/img13.png" alt=""></a>  
+<a href="apk/apk14.html"><img src="images/img14.png" alt=""></a>  
+<a href="apk/apk15.html"><img src="images/img15.png" alt=""></a>  
+</div>
+<p></p>
+<h1>Улиты</h1>
+<p></p>
+<div class="img">
+    <a href="apk/apk16.html"><img src="images/img16.png" alt=""></a>   
+    <a href="apk/apk17.html"><img src="images/img17.jpg" alt=""></a> 
+    <a href="apk/apk18.html"><img src="images/img18.png" alt=""></a>  
+    <a href="apk/apk19.html"><img src="images/img19.jpg" alt=""></a>  
+    <a href="apk/apk20.html"><img src="images/img20.png" alt=""></a>  
+</div>
+<p></p>
+<h1>Учеба</h1>
+<p></p>
+
+<div class="img">
+    <a href="apk/apk21.html"><img src="images/img21.png" alt=""></a>   
+    <a href="apk/apk22.html"><img src="images/img22.png" alt=""></a> 
+    <a href="apk/apk23.html"><img src="images/img23.png" alt=""></a>  
+    <a href="apk/apk24.html"><img src="images/img24.png" alt=""></a>  
+    <a href="apk/apk25.html"><img src="images/img25.png" alt=""></a>  
+</div>
+<p></p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+    $( "#img" ).click(function(){ 
+    $('.menu, .scrit').css('opacity', '100'  );
+});
+$(".scrit").click(function(){
+    $('.menu, .scrit').css('opacity', '0'  );
+});
+</script>
+</body>
+</html>
