@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ОПИСАНИЕ</title>
+    <style>
+           button{
+            width: 163.662px;
+            height: 45.200px;
+            background-color: rgb(239, 239, 239);
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            font-size: 26px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Canva</h1>
+    <p></p>
+    <img src="images/img20.png" alt="">
+    <p></p>
+    Удобный фоторедактор
+    <p></p>
+    <button class="btn" data-clipboard-text="https://drive.google.com/file/d/13cUlkQaoFVvIaCAU2BIkaGzOlT1uyK66/view?usp=sharing">Скачать</button>
+ 
+    <script src="clipboard.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+       <script>
+    new ClipboardJS('.btn');
+    
+    $(".btn").click(function(){
+    alert("Ссылка на скачивание скопированна. Перейдите в браузер и вставьте ссылку для скачивания");
+    });</body>
+</html>
+
+

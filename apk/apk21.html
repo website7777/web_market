@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ОПИСАНИЕ</title>
+    <style>
+           button{
+            width: 163.662px;
+            height: 45.200px;
+            background-color: rgb(239, 239, 239);
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            font-size: 26px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ekool</h1>
+    <p></p>
+    <img src="images/img21.png" alt="">
+    <p></p>
+    mKool это приложение, которое позволяет просто и удобно просматривать информацию учащегося в eKool. При быстром темпе современной жизни смартфон является неизменным помощником, который позволяет родителям сэкономить время. mKool предлагает удобный в использовании и современный дизайн, информация всегда под рукой и легко доступна.<br>Мобильное приложение mKool собирает всю информацию об учебе ученика и дает оперативный обзор:<br>Оценок.<br>Заданий.<br>Замечаний и поощрений.<br>Отсутствий.<br>Сообщений от учителей.<br>Извещений о развивающей беседе.<br>Расписание уроков ученика.<br>Решений педагогического совета.
+    <p></p>
+    <button class="btn" data-clipboard-text="https://drive.google.com/file/d/1cZdkmhNbM20tU77Mc09fx4lMpQIYhjR9/view?usp=sharing">Скачать</button>
+ 
+    <script src="clipboard.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+       <script>
+    new ClipboardJS('.btn');
+    
+    $(".btn").click(function(){
+    alert("Ссылка на скачивание скопированна. Перейдите в браузер и вставьте ссылку для скачивания");
+    });
+</script>
+
+    </body>
+</html>
+

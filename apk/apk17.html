@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ОПИСАНИЕ</title>
+    <style>
+           button{
+            width: 163.662px;
+            height: 45.200px;
+            background-color: rgb(239, 239, 239);
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            font-size: 26px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CloudConvert</h1>
+    <p></p>
+    <img src="images/img17.jpg" alt="">
+    <p></p>
+    CloudConvert is an online file converter. We support nearly all audio, video, document, ebook, archive, image, spreadsheet, and presentation formats. To get started, use the button below and select files to convert from your computer.    <p></p>
+    <button class="btn" data-clipboard-text="https://drive.google.com/file/d/1UnJfvg7-j33PHgH3yZcghv7oJcJhSvpa/view?usp=sharing">Скачать</button>
+ 
+    <script src="clipboard.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+       <script>
+    new ClipboardJS('.btn');
+    
+    $(".btn").click(function(){
+    alert("Ссылка на скачивание скопированна. Перейдите в браузер и вставьте ссылку для скачивания");
+    });
+       </script>
+</body>
+</html>
+
+
